@@ -1,0 +1,41 @@
+# Build Beyond Belief
+
+> Got an idea? Let's build it. Expert judgment, fast proofs, and staff coaching for ambitious hardware, exhibit, facility, and ops projects.
+
+Build Beyond Belief is Nathaniel Young's project advisory and coaching practice in the Des Moines, Iowa area, operated through Sagaciasoft LLC. Nathaniel brings 10+ years of engineering experience, including Microsoft, John Deere, and cross-team architecture at Principal. His portfolio at https://nathaniel-young.com covers client delivery, earlier product offerings, archived AI ventures, and learning experiments. Sagaciasoft is an active business. Its earlier AI Chatbots offering is dated; custom AI setups remain available by arrangement with Nathaniel. B3 is the route for project assessments and advisory work; hiring and role conversations go directly to Nathaniel through his portfolio.
+
+## Primary pages
+
+- https://buildbeyondbelief.com/ : Main site. Primary CTA is the Project Assessment ($999).
+- https://buildbeyondbelief.com/work : Selected case studies and playable demos.
+- https://buildbeyondbelief.com/work/flag-pole : Stand and Salute automated flag pole case study (client-permissioned, high-level).
+- https://buildbeyondbelief.com/work/museum : Des Moines Children's Museum exhibits case study.
+- https://buildbeyondbelief.com/ai-native-engineer-checklist : Free self-assessment for engineers becoming AI-native.
+- https://buildbeyondbelief.com/blueprint : Broad starter guide for turning an AI idea into a useful first build.
+- https://buildbeyondbelief.com/project-questionnaire : Project fit questionnaire and Refactor Lab interest list.
+- https://buildbeyondbelief.com/waitlist : Waitlist for full or limited-availability options.
+
+## Services
+
+- Project Assessment ($999): paid diagnostic that maps bottlenecks, first proof, build vs buy vs AI, and go / no-go on B3 Build. Primary paid entry.
+- B3 Build ($1,500–$2,000/mo): done-with-you retainer. Two 45-minute calls per month, fast proofs, staff coaching, between-call replies within one business day with the next decision in the note. Working hours stay on the build. Limited seats.
+- Refactor Assessment ($500): engineer paid entry when a cohort is opening.
+- Refactor Lab ($3,500 / 8 weeks): interest list for senior engineers who want sharper production judgment as AI changes the job. Opens when demand fills. Small cohorts only.
+- Free Fit Call: short organic-only qualify call. Not the primary CTA for paid traffic.
+- Builder’s Blueprint / Engineer Checklist: free soft-entry resources.
+
+## Best audience fit
+
+- Owners, directors, and technical leads with an ambitious project and budget to move (hardware, exhibits, facilities, ranch/ops, or internal tools).
+- Overburdened technical leads who cannot staff a full engineering team.
+- Secondary: senior engineers who want sharper production judgment as AI changes the job (Lab interest list).
+
+## Core positioning
+
+Got an idea? Let's build it. Feels too technical for you or your staff? Good. Check the path, prove the hard parts, coach your people. Your team crosses the finish line with the skills and ownership to keep compounding.
+
+## Contact
+
+- Website: https://buildbeyondbelief.com
+- Email: nathaniel@buildbeyondbelief.com
+- Location: Des Moines, Iowa

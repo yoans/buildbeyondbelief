@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stand and Salute. Build Beyond Belief</title>
+  <meta name="description" content="Pre-production automated flag pole engineering for Stand and Salute LLC, engaged through Dreamforge. Working proof of concept.">
+  <meta property="og:title" content="Stand and Salute. Build Beyond Belief">
+  <meta property="og:description" content="Pre-production automated flag pole engineering. Working proof of concept. Building toward production fleet deployment.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://buildbeyondbelief.com/work/flag-pole">
+  <meta property="og:image" content="https://buildbeyondbelief.com/nathaniel.png">
+  <link rel="canonical" href="https://buildbeyondbelief.com/work/flag-pole">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="icon" type="image/png" href="../../nathaniel.png">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../work.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LJX09X8LF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7LJX09X8LF');
+  </script>
+</head>
+<body class="work-page">
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../../index.html" class="logo">
+        <svg class="logo-mark" viewBox="40 40 200 200" aria-hidden="true">
+          <defs>
+            <linearGradient id="nav-g1" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient>
+            <linearGradient id="nav-g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#818cf8"/><stop offset="100%" stop-color="#22d3ee"/></linearGradient>
+            <linearGradient id="nav-g3" x1="100%" y1="100%" x2="0%" y2="0%"><stop offset="0%" stop-color="#6366f1"/><stop offset="50%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient>
+          </defs>
+          <g transform="translate(150,140) rotate(-55,-10,0) scale(2)" opacity="0.75"><path d="M-16,-28 L-16,28 L12,14 L-4,0 L12,-14 Z" stroke="url(#nav-g1)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></g>
+          <g transform="translate(150,140) rotate(-27,-10,0) scale(2)" opacity="0.85"><path d="M-16,-28 L-16,28 L12,14 L-4,0 L12,-14 Z" stroke="url(#nav-g2)" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/></g>
+          <g transform="translate(150,140) rotate(1,-10,0) scale(2)" opacity="1"><path d="M-16,-28 L-16,28 L12,14 L-4,0 L12,-14 Z" stroke="url(#nav-g3)" stroke-width="3.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></g>
+        </svg>
+        <span class="logo-text">Build Beyond Belief</span>
+      </a>
+      <div class="nav-links">
+        <a href="../../index.html#offers">Services</a>
+        <a href="../../work/">Work</a>
+        <a href="../../index.html#about">About</a>
+        <a href="../../fit-call/">Fit call</a>
+        <a href="../../book/" class="nav-cta">Book Assessment</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="case">
+    <p class="case-back"><a href="../../work/">← All work</a></p>
+    <header class="case-header">
+      <p class="work-eyebrow">Stand and Salute LLC · via Dreamforge</p>
+      <h1>Stand and Salute</h1>
+      <p class="case-meta">Contract engineering lead · Sagaciasoft LLC · July 2025 to present · Pre-production POC</p>
+    </header>
+
+    <section>
+      <h2>What it is</h2>
+      <p>Stand and Salute LLC is building an automated flag pole system. Dreamforge hired me as contract engineering lead.</p>
+      <p>The system raises and lowers a flag, moves to half-staff when observance calls for it, and has to keep working when nobody is at the pole. It lives outdoors. It has a motor. A wrong position is obvious to anyone looking up.</p>
+      <p>Stand and Salute is still pre-production, so there is no public marketing site yet. The engineering work is already underway.</p>
+    </section>
+
+    <section>
+      <h2>The hard part</h2>
+      <p>Early versions depended on an off-the-shelf cloud platform for intelligence. For unattended outdoor hardware, that gets brittle fast. If the cloud hiccups, the pole is stuck waiting on a vendor the team does not control.</p>
+      <p>Before production, reliability has to sit with the product, including when the network is gone.</p>
+    </section>
+
+    <section>
+      <h2>What we needed to prove</h2>
+      <ul>
+        <li>Can the unit behave correctly with no internet?</li>
+        <li>Can it be watched and commanded remotely when the network is up?</li>
+        <li>Can safe motion behavior live on the machine itself?</li>
+        <li>Can a technician bring up a unit without an engineer on site?</li>
+      </ul>
+      <p>The current work answers those with a running proof of concept, then hardens the path to production.</p>
+    </section>
+
+    <section>
+      <h2>What I owned</h2>
+      <p>Software across the device and the cloud, plus the handoff path so other people can run it.</p>
+      <ul>
+        <li>On-device software: motion, operator controls, safety, status</li>
+        <li>Cloud backend and operator dashboard: device visibility, scheduling, remote command</li>
+        <li>Offline-capable operation through outages</li>
+        <li>Provisioning and update tooling</li>
+        <li>Field docs, technician setup, troubleshooting, acceptance checks</li>
+        <li>Software tests that can run without a physical pole in the room</li>
+      </ul>
+      <p>I covered embedded Linux, motion safety, device lifecycle, offline-first design, cloud backend and dashboard work, and technician-ready documentation.</p>
+    </section>
+
+    <section>
+      <h2>Status</h2>
+      <p>Pre-production. The proof of concept is running and looking solid. Next step is production fleet deployment.</p>
+      <p>If you have a physical build with the same kind of reliability pressure, <a href="../../book/">book a Project Assessment</a> or a <a href="../../fit-call/">free 20-minute fit call</a>.</p>
+    </section>
+
+    <nav class="case-nav">
+      <a href="../../work/museum/">Museum exhibits →</a>
+      <a href="https://nathaniel-young.com/work-flag-pole.html">On nathaniel-young.com ↗</a>
+    </nav>
+  </article>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sagaciasoft LLC · DBA Build Beyond Belief · Des Moines, Iowa</p>
+      <div class="footer-links">
+        <a href="../../privacy/">Privacy</a>
+        <a href="../../terms/">Terms</a>
+        <a href="mailto:nathaniel@buildbeyondbelief.com">nathaniel@buildbeyondbelief.com</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

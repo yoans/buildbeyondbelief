@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Project Fit Questionnaire. Build Beyond Belief</title>
+  <meta name="description" content="Tell Build Beyond Belief what you want to build, automate, or refactor with AI.">
+  <meta property="og:title" content="AI Project Fit Questionnaire. Build Beyond Belief">
+  <meta property="og:description" content="For engineers, SMB operators, and serious builders who need practical AI help with a real workflow.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://buildbeyondbelief.com/project-questionnaire">
+  <meta property="og:image" content="https://buildbeyondbelief.com/nathaniel.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://buildbeyondbelief.com/project-questionnaire">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7LJX09X8LF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7LJX09X8LF');
+  </script>
+  <style>
+    :root {
+      --ink: #0f0f1a;
+      --card: #18182b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #2d2d44;
+      --indigo: #6366f1;
+      --cyan: #06b6d4;
+      --green: #22c55e;
+      --red: #f87171;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.18), transparent 32%), var(--ink);
+      color: var(--text);
+      padding: 48px 20px;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    .back { color: var(--muted); text-decoration: none; font-size: 14px; }
+    .back:hover { color: var(--text); }
+    .card {
+      margin-top: 28px;
+      background: rgba(24, 24, 43, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+    }
+    .eyebrow {
+      display: inline-block;
+      color: var(--cyan);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1, h2 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; }
+    h1 { font-size: clamp(32px, 6vw, 48px); margin-bottom: 16px; }
+    .lede { color: var(--muted); font-size: 18px; margin-bottom: 24px; }
+    .note {
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.32);
+      border-radius: 14px;
+      padding: 18px;
+      color: #c7d2fe;
+      margin-bottom: 28px;
+      font-size: 15px;
+    }
+    .cohort-note {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.24);
+      border-radius: 999px;
+      color: #fbbf24;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 18px;
+      padding: 12px 14px;
+    }
+    form { display: grid; gap: 18px; }
+    label { display: block; font-weight: 600; margin-bottom: 7px; }
+    input, textarea, select {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font: inherit;
+      padding: 13px 14px;
+      outline: none;
+    }
+    select { color-scheme: dark; background-color: #111827; }
+    select option { background-color: #18182b; color: #f8fafc; }
+    textarea { min-height: 150px; resize: vertical; }
+    input:focus, textarea:focus, select:focus { border-color: var(--indigo); }
+    .hint { color: var(--muted); font-size: 13px; margin-top: 6px; }
+    .checkbox {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .checkbox input { width: auto; margin-top: 4px; }
+    button, .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 22px;
+      background: linear-gradient(135deg, var(--indigo), var(--cyan));
+      color: white;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.7; cursor: not-allowed; }
+    .btn-secondary { background: transparent; border: 1px solid var(--border); color: var(--text); }
+    .error { display: none; color: var(--red); font-size: 14px; }
+    .success { display: none; }
+    .success h2 { font-size: 30px; margin-bottom: 12px; }
+    .success p { color: var(--muted); margin-bottom: 18px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    @media (max-width: 560px) {
+      body { padding: 28px 14px; }
+      .card { padding: 26px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../index.html">← Back to Build Beyond Belief</a>
+
+    <main class="card">
+      <div id="form-state">
+        <span class="eyebrow">AI Project Fit</span>
+        <h1>Tell me what you want AI to help with.</h1>
+        <p class="lede">This questionnaire is for experienced engineers applying to Refactor Lab and for SMB operators who need practical AI help with real workflows.</p>
+        <p class="cohort-note">Refactor Lab will be limited to 4 to 6 seats. Cohort date and application deadline are TBD.</p>
+        <div class="note">
+          I am using this instead of a generic waitlist because fit matters. The useful question is not "do you want AI help?" It is what needs to change, what systems are involved, and whether the next step should be a fit call, paid diagnostic, cohort, or something lighter.
+        </div>
+
+        <form id="application-form" novalidate>
+          <div>
+            <label for="interest">Which path best fits?</label>
+            <select id="interest" name="interest">
+              <option value="not-sure">Not sure yet</option>
+              <option value="refactor-lab">Refactor Lab, 8-week group beta</option>
+              <option value="smb-ai-help">SMB AI Help, workflow or business system</option>
+              <option value="refactor-assessment">Refactor Assessment, paid diagnostic</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="name">Name <span style="color: var(--red);">*</span></label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div>
+            <label for="email">Email <span style="color: var(--red);">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div>
+            <label for="role">Role or business context</label>
+            <input id="role" name="role" placeholder="Senior engineer, founder, owner, operator, team lead, etc.">
+          </div>
+
+          <div>
+            <label for="company">Company or project</label>
+            <input id="company" name="company" placeholder="Optional, but useful for context">
+          </div>
+
+          <div>
+            <label for="teamSize">Team or company size</label>
+            <select id="teamSize" name="teamSize">
+              <option value="">Select one</option>
+              <option value="Solo">Solo</option>
+              <option value="2 to 10 people">2 to 10 people</option>
+              <option value="11 to 50 people">11 to 50 people</option>
+              <option value="51 to 200 people">51 to 200 people</option>
+              <option value="200+ people">200+ people</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="project">What do you want to build, fix, or automate? <span style="color: var(--red);">*</span></label>
+            <textarea id="project" name="project" required placeholder="Describe the workflow, tool, internal artifact, customer process, product prototype, or technical capability you want to improve."></textarea>
+            <p class="hint">Specific is better. If the project is fuzzy, describe the pain or opportunity you keep noticing.</p>
+          </div>
+
+          <div>
+            <label for="systems">What systems, data, or tools are involved?</label>
+            <textarea id="systems" name="systems" placeholder="Examples: inbox, CRM, spreadsheets, website, support tickets, internal docs, codebase, scheduling, invoices, client onboarding."></textarea>
+            <p class="hint">Do not paste secrets, credentials, customer data, private docs, or proprietary details into this form.</p>
+          </div>
+
+          <div>
+            <label for="urgency">How soon does this matter?</label>
+            <select id="urgency" name="urgency">
+              <option value="">Select one</option>
+              <option value="This week">This week</option>
+              <option value="This month">This month</option>
+              <option value="This quarter">This quarter</option>
+              <option value="Exploring for later">Exploring for later</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="budget">What level of investment feels realistic if there is fit?</label>
+            <select id="budget" name="budget">
+              <option value="">Select one</option>
+              <option value="Need guidance first">Need guidance first</option>
+              <option value="$500 diagnostic">$500 diagnostic</option>
+              <option value="$3.5K Refactor Lab">$3.5K Refactor Lab</option>
+              <option value="$5K private Refactor">$5K private Refactor</option>
+              <option value="Custom team or business engagement">Custom team or business engagement</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="weeklyTime">How much time can you protect each week?</label>
+            <select id="weeklyTime" name="weeklyTime">
+              <option value="">Select one</option>
+              <option value="Less than 2 hours">Less than 2 hours</option>
+              <option value="2 to 4 hours">2 to 4 hours</option>
+              <option value="4 to 6 hours">4 to 6 hours</option>
+              <option value="6 or more hours">6 or more hours</option>
+            </select>
+          </div>
+
+          <label class="checkbox" for="newsletter">
+            <input id="newsletter" name="newsletter" type="checkbox" checked>
+            <span>Also send me the weekly Build Beyond Belief newsletter. Practical AI building notes, no fluff.</span>
+          </label>
+
+          <button id="submit-btn" type="submit">Email this questionnaire</button>
+          <p class="error" id="error-msg"></p>
+        </form>
+      </div>
+
+      <div class="success" id="success-state">
+        <span class="eyebrow">Email draft ready</span>
+        <h2>Send the draft, and I will review it.</h2>
+        <p>If the project looks like a fit, I will reply with the next step. That is usually the Refactor Assessment, then Refactor Lab. Private 1:1 is only offered when the seat is open and the work needs it.</p>
+        <div class="actions">
+          <a class="btn" href="https://cal.com/nathaniel-beyond-belief/refactor-assessment" target="_blank" rel="noopener">Book a Refactor Assessment</a>
+          <a class="btn btn-secondary" href="../ai-native-engineer-checklist/">Engineer Checklist</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const form = document.getElementById('application-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const errorMsg = document.getElementById('error-msg');
+    const interestSelect = document.getElementById('interest');
+
+    const params = new URLSearchParams(window.location.search);
+    const presetPath = params.get('path');
+    if (presetPath && ['refactor-lab', 'smb-ai-help', 'refactor-assessment', 'not-sure'].includes(presetPath)) {
+      interestSelect.value = presetPath;
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      errorMsg.style.display = 'none';
+
+      const payload = {
+        interest: interestSelect.value,
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        role: document.getElementById('role').value.trim(),
+        company: document.getElementById('company').value.trim(),
+        teamSize: document.getElementById('teamSize').value,
+        project: document.getElementById('project').value.trim(),
+        systems: document.getElementById('systems').value.trim(),
+        urgency: document.getElementById('urgency').value,
+        budget: document.getElementById('budget').value,
+        weeklyTime: document.getElementById('weeklyTime').value,
+        newsletter: document.getElementById('newsletter').checked,
+      };
+
+      if (!payload.name || !payload.email || !payload.project) {
+        errorMsg.textContent = 'Name, email, and project are required.';
+        errorMsg.style.display = 'block';
+        return;
+      }
+
+      const lines = [
+        'Interest: ' + payload.interest,
+        'Name: ' + payload.name,
+        'Email: ' + payload.email,
+        'Role: ' + payload.role,
+        'Company: ' + payload.company,
+        'Team size: ' + payload.teamSize,
+        'Urgency: ' + payload.urgency,
+        'Budget: ' + payload.budget,
+        'Weekly time: ' + payload.weeklyTime,
+        'Weekly note: ' + (payload.newsletter ? 'yes' : 'no'),
+        '',
+        'Project:',
+        payload.project,
+        '',
+        'Systems:',
+        payload.systems,
+      ].join('\n');
+      window.location.href = 'mailto:nathaniel@buildbeyondbelief.com?subject='
+        + encodeURIComponent('B3 project questionnaire')
+        + '&body=' + encodeURIComponent(lines);
+      document.getElementById('form-state').style.display = 'none';
+      document.getElementById('success-state').style.display = 'block';
+    });
+  </script>
+</body>
+</html>
