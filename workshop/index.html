@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Room. Build Beyond Belief</title>
+  <meta name="description" content="One Saturday in Des Moines. You bring an idea in a sentence. You leave with the first digital piece working. 10 seats. $250.">
+  <meta property="og:title" content="The Room. Nothing digital is out of reach.">
+  <meta property="og:description" content="See it. Try it on your own idea. Leave with something working. Des Moines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://buildbeyondbelief.com/workshop/">
+  <meta property="og:image" content="https://buildbeyondbelief.com/nathaniel.png">
+  <link rel="canonical" href="https://buildbeyondbelief.com/workshop/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .room {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 140px 24px 80px;
+    }
+    .room h1 {
+      font-family: var(--font-display);
+      font-size: clamp(40px, 6vw, 64px);
+      letter-spacing: -0.04em;
+      line-height: 1.02;
+      margin: 12px 0 20px;
+    }
+    .room .lede {
+      font-size: 20px;
+      color: var(--color-text-muted);
+      margin-bottom: 28px;
+    }
+    .room h2 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      margin: 40px 0 12px;
+    }
+    .room p, .room li {
+      color: var(--color-text-muted);
+      font-size: 17px;
+    }
+    .room ul {
+      margin: 8px 0 0 18px;
+    }
+    .room li { margin: 8px 0; }
+    .room-facts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 28px 0;
+    }
+    .room-facts div {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+    .room-facts span {
+      display: block;
+      color: var(--color-text-subtle);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .room-facts strong {
+      font-family: var(--font-display);
+      font-size: 22px;
+    }
+    .room-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .room a.quiet { color: var(--color-primary-light); }
+    @media (max-width: 640px) {
+      .room-facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../" class="logo">
+        <span class="logo-text">Build Beyond Belief</span>
+      </a>
+      <div class="nav-links">
+        <a href="../work/">Work</a>
+        <a href="../book/">I have a project</a>
+        <a href="mailto:nathaniel@buildbeyondbelief.com?subject=Workshop%20seat" class="nav-cta">Take a seat</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="room">
+    <p class="section-label">Des Moines</p>
+    <h1>Come build the piece you have been saving.</h1>
+    <p class="lede">
+      You can already say what it is. A page, a tool, a small system, the first proof of an idea that has stayed in your head because the digital part felt too far. For one Saturday, that piece gets made. AI is on the table. I am in the room. So is everyone else, each on their own idea.
+    </p>
+
+    <div class="room-facts">
+      <div><span>Seats</span><strong>10</strong></div>
+      <div><span>The day</span><strong>$250</strong></div>
+      <div><span>When</span><strong>When 6 are in</strong></div>
+    </div>
+
+    <h2>What changes by the time you stand up</h2>
+    <ul>
+      <li>The first piece of your idea works.</li>
+      <li>The next piece looks reachable, because you just did the hard one.</li>
+      <li>You spent the day with people who are building too, in the same future you came to see.</li>
+    </ul>
+
+    <h2>What the day feels like</h2>
+    <p>
+      You arrive with one sentence. You sit down and the stuck part shows up fast. Someone across the table has already hit it. I am close enough to point at the next move. The room gets loud when the thing on your screen starts behaving. You leave with it on your machine, and with the sense that the rest of the digital work is the same kind of afternoon.
+    </p>
+    <p>
+      Bring a laptop if you have one. If you do not, tell me in the email and we will sort a seat at a shared machine.
+    </p>
+
+    <h2>How a seat works</h2>
+    <p>
+      Email me that you want in, and include the idea in a sentence. When six people have said yes, I set the Saturday in Des Moines and write everyone. Ten seats, then the door closes. $250 for the day. Pay when the date is set.
+    </p>
+    <div class="room-actions">
+      <a class="btn btn-primary" href="mailto:nathaniel@buildbeyondbelief.com?subject=Workshop%20seat&amp;body=The%20idea%20in%20one%20sentence:%0A%0A">
+        <span>Ask for a seat</span>
+      </a>
+      <a class="btn btn-secondary" href="../book/">I already have a project</a>
+    </div>
+    <p style="margin-top: 28px;">
+      Flag poles and museum floors are the kind of build this room is pointed at.
+      <a class="quiet" href="../work/">See the work.</a>
+      If your project needs more than a Saturday, the assessment is the longer conversation.
+    </p>
+  </main>
+</body>
+</html>
